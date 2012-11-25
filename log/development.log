@@ -12,3 +12,4 @@ Served asset /rails.png - 304 Not Modified (0ms)
 Started GET "/assets/rails.png" for 127.0.0.1 at Sun Nov 25 14:11:56 -0500 2012
 Served asset /rails.png - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
