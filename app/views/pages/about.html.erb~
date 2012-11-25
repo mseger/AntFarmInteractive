@@ -1,0 +1,94 @@
+<script type="text/javascript">
+  document.getElementById('li_about').className = "active";
+</script>
+
+      <div class="jumbotron">
+        <h2>Lifegraph Labs</h2>
+        <p>We are introducing a platform for developers to persist, record, and share physical interactions on Facebook's Open Graph.Lifegraph Labs was born from the idea that much of the lives we live, and the activities we wish to remember and share with our friends, are not done online. Oftentimes there is a fundamental disconnect between how people express themselves online and how they express themselves in everyday interactions.</p>
+        <p>That is why Lifegraph Labs jumped at the opportunity to team up with Olin College for Expo. MORE ABOUT OUR EXPO VISION HERE!</p>
+        <!-- <a class="btn btn-large btn-success" href="#">Sign up today</a> -->
+      </div>
+
+  <div class="row-fluid human">
+    <span class="offset1 span2 container-image">
+      <div class="bordered green">
+        <img alt="Tim" src="https://sphotos-a.xx.fbcdn.net/hphotos-snc7/3465_3773995828577_325805109_n.jpg" />
+      </div>
+    </span>
+    <span class="span8">
+      <h2 class="dom-heading">Tim Ryan- Project Manager</h2>
+      <p>Tim was born, raised, and will one day die in the loving embrace of New England. He has been using the Internet since he was just four years old, sharpened his teeth on AOL webcomics and Invader Zim message boards, and made horrible abominations on Geocities using everyone’s favorite language, JavaScript. Ten years later, this became the cool thing to do and Tim rocketed to Internet stardom. He’s authored compilers, canvas shims, and trendy Lisps, developed for Intuit, PMed Microsoft, and rocked the HTML5 boat at Game Closure. He’s interested in making computing more accessible to everyone, and has a penchant for APIs and platforms. Tim loves acting, vintage video games, and typography, and one day you’ll find him mad, fleeing to the coast of Ireland, writing fishing novels.
+      </p>
+    </span>
+  </div>
+
+  <div class="row-fluid human">
+    <span class="offset1 span2 container-image">
+      <div class="bordered blue">
+        <img alt="Jia" src="https://sphotos-a.xx.fbcdn.net/hphotos-snc7/338566_10151166192190676_1634654745_o.jpg" />
+      </div>
+
+    </span>
+    <span class="span8">
+      <h2 class="dom-heading">Jialiya Huang- Hardware Lead</h2>
+      <p>Jia was born in Beijing, but moved to North Carolina. She is majoring in Electrical and Computer Engineering, and sometimes even enjoys it. Over the summers, she has worked on Amazon’s supply chain operations, Windows 8 user experience, and Twilio’s build and deployment systems. Her main goal in life is to automate all possible tasks. Besides spending two hours on a project to save two seconds of time, she likes to longboard, climb rocks, and general outdoor activities.
+      </p>
+    </span>
+  </div>
+
+    <div class="row-fluid human">
+    <span class="offset1 span2 container-image">
+      <div class="bordered blue">
+        <img alt="Shane" src="https://sphotos-b.xx.fbcdn.net/hphotos-ash4/480362_4454378922098_952558954_n.jpg" />
+      </div>
+
+    </span>
+    <span class="span8">
+      <h2 class="dom-heading">Shane Moon- Software Lead</h2>
+      <p>Shane is from Seoul, Korea. He studies engineering with a concentration in computing at Olin College of Engineering. He has a passion for technology and its application in our daily lives, and has worked at a number of tech companies including Microsoft, IMEC, and Quanta Research as a software developer. His current academic interests include speech recognition, machine learning, and web/mobile application development. He also loves to compose music, take photos, travel around the world, and practice kendo.
+      </p>
+    </span>
+  </div>
+
+    <div class="row-fluid human">
+    <span class="offset1 span2 container-image">
+      <div class="bordered blue">
+        <img alt="Paul" src="https://sphotos-b.xx.fbcdn.net/hphotos-prn1/61411_4971155997384_393351046_n.jpg" />
+      </div>
+
+    </span>
+    <span class="span8">
+      <h2 class="dom-heading">Paul Booth- Communications, Hacker</h2>
+      <p>Paul is a software magician. Coming from Pennsylvania, he escaped his asylum to go join a troupe of wandering software crazies in San Francisco (called “programmers”) and has worked at such mythological places as Twitter and Google. Today, Paul has graciously taken time out of his busy schedule to project his avatar onto our SCOPE team. Paul loves tricks, tips, and wizard battles. He’s adept at cool computer hacks and crafts, and can explain any mathematical concept to you--with a curse. He also makes jewelry, improvises, performs magic, writes math papers, and fights for the common man. If you haven’t heard of Paul Booth yet, you will.
+      </p>
+    </span>
+  </div>
+
+    <div class="row-fluid human">
+    <span class="offset1 span2 container-image">
+      <div class="bordered blue">
+        <img alt="Jon" src="https://sphotos-b.xx.fbcdn.net/hphotos-ash4/422186_10151147600205676_1487493643_n.jpg" />
+      </div>
+
+    </span>
+    <span class="span8">
+      <h2 class="dom-heading">Jon McKay- Safety and Ethics, Hacker</h2>
+      <p>Jon hails from the land of movie stars, famous governors, and famous movie star governors: California. He didn’t find his passion for building things until his high school girlfriend told him she was going to an all-girls school down the street from Olin College of Engineering. Since then he’s become a hopeless addict of bit pushing and switch flipping. Nobody and nothing can tear him away - not even his high school girlfriend. He has also dabbled in stand-up comedy, modeling, improv, and all sorts of attention whoring activities. He enjoys calling himself a photographer and occasionally even takes pictures (film and digital). He has built web apps for Internet Explorer (10), infrastructure for embedded telecommunications devices at Pico Digital, and an entire Facebook-based events iOS app for Hangtime. As the most American American ever created, he also enjoys playing his guitar around campfires, tennis, and investing. 
+      </p>
+    </span>
+  </div>
+
+      <div class="row-fluid human">
+    <span class="offset1 span2 container-image">
+      <div class="bordered blue">
+        <img alt="MA" src="https://sphotos-a.xx.fbcdn.net/hphotos-snc6/8791_10200093590569216_278384306_n.jpg" />
+      </div>
+
+    </span>
+    <span class="span8">
+      <h2 class="dom-heading">Margaret-Ann Seger- Business Lead</h2>
+      <p>Margaret-Ann isn’t quite sure where she’s from- depending on who you ask it’s Portland, OR, Canada, Sweden, or all three. She’s crazy about tech and startups, trolling TechCrunch more than can be qualified as healthy. MA’s secret obsession is IKEA and she makes a point to eat at an IKEA in every country she visits (the only country that has broken this trend is Luxembourg...but don’t worry, she went to the Belgian one near the border!). Margaret-Ann has spent her summers doing a delightfully bizarre mix of jobs, including mathematical biology research in Northern Scotland, building a mobile hardware control API at National Instruments, and designing the next generation of eReaders at Chegg. 
+      </p>
+    </span>
+  </div>
+
