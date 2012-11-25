@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
@@ -9,9 +9,3 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-gem 'nifty-generators'
-gem 'mocha', :group => :test
-
-gem "rmagick"
-gem "carrierwave", "0.5.1"
-gem "fog", "0.5.3"
