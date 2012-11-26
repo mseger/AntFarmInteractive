@@ -15,7 +15,7 @@
 <% @projects.each do |project| %>
   <tr>
 
-    <td><a href="<%= show_project_path(project) %>"> <%= project.title %> </a> </td>
+    <td><a href="http://olinexpo.herokuapp.com/projects/<%=project.id%>"> <%= project.title %> </a> </td>
     <td><%= project.names %></td>
     <td><%= link_to 'Edit', edit_project_path(project) %></td>
     <td><%= link_to 'Destroy', project, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
