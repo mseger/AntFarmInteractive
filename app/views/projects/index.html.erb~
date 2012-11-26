@@ -14,7 +14,7 @@
 
 <% @projects.each do |project| %>
   <tr>
-    <td><%= link_to "<%= project.title %>", project %> </td>
+    <td><%= link_to '<%= project.title %>', project %> </td>
     <td><%= project.names %></td>
     <td><%= link_to 'Edit', edit_project_path(project) %></td>
     <td><%= link_to 'Destroy', project, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
@@ -24,4 +24,4 @@
 
 <br />
 
-<%= link_to 'Add Your Project Here', new_project_path %>
+<%= link_to 'Add Your Project Here!', new_project_path %>
