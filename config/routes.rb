@@ -1,4 +1,7 @@
 AntFarmInteractive::Application.routes.draw do
+
+  get "pages/preview"
+
   get "pages/home"
 
   get "pages/about"

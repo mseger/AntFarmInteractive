@@ -46450,3 +46450,1552 @@ ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favico
 
 
   Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 28 10:40:46 -0500 2012
+Connecting to database specified by database.yml
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__268946105__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 28 10:40:55 -0500 2012
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__268946105__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 28 10:50:24 -0500 2012
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 79ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 10:50:25 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (70ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 10:50:25 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (44ms)
+
+
+Started GET "/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 10:50:25 -0500 2012
+Served asset /ico/favicon.ico - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 28 10:51:02 -0500 2012
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 10:51:03 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 10:51:03 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 10:51:03 -0500 2012
+Served asset /ico/favicon.ico - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at Wed Nov 28 10:51:06 -0500 2012
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 10:51:06 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 10:51:06 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 10:51:06 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Wed Nov 28 10:51:07 -0500 2012
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 10:51:07 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 10:51:07 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Wed Nov 28 10:51:08 -0500 2012
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 10:51:08 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 10:51:09 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (44.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Wed Nov 28 10:51:10 -0500 2012
+Processing by ProjectsController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+ActiveRecord::StatementInvalid (Could not find table 'projects'):
+  app/controllers/projects_controller.rb:5:in `index'
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 10:51:14 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at Wed Nov 28 10:51:17 -0500 2012
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 10:51:17 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 10:51:17 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 10:51:17 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at Wed Nov 28 10:51:24 -0500 2012
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 10:51:24 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 10:51:24 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 10:51:24 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at Wed Nov 28 10:51:28 -0500 2012
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 10:51:28 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 10:51:28 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 10:51:29 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at Wed Nov 28 11:03:48 -0500 2012
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 11:03:48 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 11:03:48 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 11:03:49 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Wed Nov 28 11:33:07 -0500 2012
+Connecting to database specified by database.yml
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 11:33:07 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (2ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 11:33:07 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Wed Nov 28 11:33:14 -0500 2012
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 11:33:15 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 11:33:15 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at Wed Nov 28 11:33:16 -0500 2012
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 11:33:16 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 11:33:16 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 11:33:16 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 28 15:41:56 -0500 2012
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:41:58 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (30ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 15:41:58 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (51ms)
+
+
+Started GET "/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:41:59 -0500 2012
+Served asset /ico/favicon.ico - 404 Not Found (135ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Wed Nov 28 15:42:04 -0500 2012
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:42:04 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:42:05 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:42:08 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:42:08 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expoStock1.jpg" for 127.0.0.1 at Wed Nov 28 15:42:08 -0500 2012
+Served asset /expoStock1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:42:08 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:47:10 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:47:10 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_project.png" for 127.0.0.1 at Wed Nov 28 15:47:10 -0500 2012
+Served asset /olin_expo_project.png - 200 OK (13ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:47:10 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:47:21 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:47:21 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_project.png" for 127.0.0.1 at Wed Nov 28 15:47:21 -0500 2012
+Served asset /olin_expo_project.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:47:21 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:47:47 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at Wed Nov 28 15:47:47 -0500 2012
+Served asset /olin_expo_visualization.png - 200 OK (7ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:47:47 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:47:48 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:48:05 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:48:05 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at Wed Nov 28 15:48:05 -0500 2012
+Served asset /olin_expo_visualization.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:48:06 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:50:42 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at Wed Nov 28 15:50:42 -0500 2012
+Served asset /olin_expo_visualization.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:50:42 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:50:42 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:52:24 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:52:24 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at Wed Nov 28 15:52:24 -0500 2012
+Served asset /olin_expo_visualization.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:52:24 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:57:06 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:57:06 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at Wed Nov 28 15:57:06 -0500 2012
+Served asset /olin_expo_visualization.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_transition.png" for 127.0.0.1 at Wed Nov 28 15:57:06 -0500 2012
+Served asset /olin_expo_transition.png - 200 OK (5ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:57:06 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:58:08 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:58:09 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at Wed Nov 28 15:58:09 -0500 2012
+Served asset /olin_expo_visualization.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_transition.png" for 127.0.0.1 at Wed Nov 28 15:58:09 -0500 2012
+Served asset /olin_expo_transition.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:58:09 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:58:15 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:58:16 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at Wed Nov 28 15:58:16 -0500 2012
+Served asset /olin_expo_visualization.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_transition.png" for 127.0.0.1 at Wed Nov 28 15:58:16 -0500 2012
+Served asset /olin_expo_transition.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:58:16 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/pages/preview" for 127.0.0.1 at Wed Nov 28 15:58:43 -0500 2012
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at Wed Nov 28 15:58:43 -0500 2012
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at Wed Nov 28 15:58:43 -0500 2012
+Served asset /olin_expo_visualization.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_transition.png" for 127.0.0.1 at Wed Nov 28 15:58:43 -0500 2012
+Served asset /olin_expo_transition.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/assets/ico/favicon.ico" for 127.0.0.1 at Wed Nov 28 15:58:43 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
