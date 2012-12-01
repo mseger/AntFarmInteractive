@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
+# Facebook authentication.
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+
 group :production do
   gem 'pg'
 end
