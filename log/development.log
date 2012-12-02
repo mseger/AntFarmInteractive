@@ -53889,3 +53889,126 @@ ActionController::RoutingError (No route matches [GET] "/projects/assets/ico/fav
 
 
   Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-02 11:36:47 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 11:36:48 -0500
+Served asset /collabLogo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at 2012-12-02 11:36:48 -0500
+Served asset /olin_expo_visualization.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_transition.png" for 127.0.0.1 at 2012-12-02 11:36:48 -0500
+Served asset /olin_expo_transition.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ico/favicon.ico" for 127.0.0.1 at 2012-12-02 11:36:48 -0500
+Served asset /ico/favicon.ico - 404 Not Found (28ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 11:36:50 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 100ms (Views: 4.4ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 11:36:50 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-12-02 11:36:55 -0500
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (6.7ms)
+  Rendered projects/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 11:36:56 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects/assets/ico/favicon.ico" for 127.0.0.1 at 2012-12-02 11:36:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/projects/assets/ico/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 11:37:04 -0500
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 11:37:05 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-02 11:37:09 -0500
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 11:37:09 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at 2012-12-02 11:37:09 -0500
+Served asset /olin_expo_visualization.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_transition.png" for 127.0.0.1 at 2012-12-02 11:37:09 -0500
+Served asset /olin_expo_transition.png - 304 Not Modified (0ms)
