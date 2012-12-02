@@ -1,4 +1,4 @@
-<%= form_for(@project) do |f| %>
+<%= form_for(@project, :html=> {:class => "projectform"}) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
@@ -11,23 +11,34 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
+  <div class="projectformfield_narrow1">
+    <%= f.label :contact_name %><br />
+    <%= f.text_field :contact_name %>
   </div>
-  <div class="field">
-    <%= f.label :names %><br />
-    <%= f.text_field :names %>
+  <div class="projectformfield_narrow1">
+    <%= f.label :contact_email %><br />
+    <%= f.text_field :contact_email %>
   </div>
-  <div class="field">
-    <%= f.label :image_url %><br />
-    <%= f.text_field :image_url %>
+  <div class="projectformfield_narrow2">     
+    <%= f.label :presentation_title%><br />
+    <%= f.text_field :presentation_title %>
   </div>
-  <div class="field">
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
+  <div class="projectformfield_wide">
+    <%= f.label :all_students_presenting %><br />
+    <%= f.text_area :all_students_presenting %>
+  </div>
+  <div class="projectformfield_wide">
+    <%= f.label :project_description%><br />
+    <%= f.text_area :project_description %>
+  </div>
+  <div class="projectformfield_wide">
+    <%= f.label :special_needs%><br />
+    <%= f.text_area :special_needs %>
+  </div>
+  <div class="projectformfield_wide">
+    <%= f.label :topical_area%><br />
+    <%= f.check_box :topical_area %>
   </div>
   <div class="actions">
     <%= f.submit %>
-  </div>
 <% end %>

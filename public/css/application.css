@@ -1,0 +1,22 @@
+.projectform{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.projectformfield{
+	width: 400px;
+    height: 100%;
+}
+
+.projectformfield_narrow1 input {
+	width: 200px;
+}
+
+.projectformfield_narrow2 input {
+	width: 300px;
+}
+
+.projectformfield_wide input, .projectformfield_wide textarea{
+	width: 600px;
+}

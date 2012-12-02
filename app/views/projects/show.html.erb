@@ -5,23 +5,38 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Title:</b>
-  <%= @project.title %>
+  <b>Contact Name:</b>
+  <%= @project.contact_name %>
 </p>
 
 <p>
-  <b>Names:</b>
-  <%= @project.names %>
+  <b>Contact Emails:</b>
+  <%= @project.contact_email %>
 </p>
 
 <p>
-  <b>Image url:</b>
-  <%= @project.image_url %>
+  <b>Presentation Title:</b>
+  <%= @project.presentation_title %>
 </p>
 
 <p>
-  <b>Content:</b>
-  <%= @project.content %>
+  <b>All Students Presenting:</b>
+  <%= @project.all_students_presenting %>
+</p>
+
+<p>
+	<b>Project Description:</b>
+	<%= @project.project_description %>
+</p>
+
+<p>
+	<b>Special Needs:</b>
+	<%= @project.special_needs%>
+</p>
+
+<p>
+	<b>Topical Areas:</b>
+	<%= @project.topical_area %>
 </p>
 
 <h2>Comments</h2>
