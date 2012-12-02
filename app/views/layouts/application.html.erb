@@ -68,25 +68,24 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li id='li_home'><a href="<%=pages_home_path%>">Home</a></li>
-          <li id='li_projects' class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="<%=projects_path%>">Directory</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Project Pages</a></li>
-                </ul>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="<%=projects_path%>">Projects</a></li>
+          <li><a href="#">Add Project</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Expo</a></li>
+              <li class="divider"></li>
+              <li><a href="<%=pages_about_path%>">Lifegraph Labs</a></li>
+            </ul>
           </li>
-          <li id='li_about'><a href="<%=pages_about_path%>">About Lifegraph Labs</a></li>
-          <li id='li_contact'><a href="<%=pages_contact_path%>">Contact</a></li>
+          <li><a href="<%=pages_contact_path%>">Contact</a></li>
         </ul>
         <!--<h3 class="muted">Olin Expo Fall 2012</h3>-->
         <h3 class="muted"> 
-          <img src="/assets/collabLogo.png" alt="">
+          <a href="/"><img src="/assets/collabLogo.png" alt=""></a>
         </h3>
       </div>
-
-      <hr>
 		<%= yield %>
       <hr>
 
