@@ -2,7 +2,7 @@
   document.getElementById('li_projects').className = "active dropdown";
 </script>
 
-<p id="notice"><%= notice %></p>
+<h2><%= @project.presentation_title %> <small>PRESENTATION</small></h2>
 
 <p>
   <b>Contact Name:</b>
@@ -15,11 +15,6 @@
 </p>
 
 <p>
-  <b>Presentation Title:</b>
-  <%= @project.presentation_title %>
-</p>
-
-<p>
   <b>All Students Presenting:</b>
   <%= @project.all_students_presenting %>
 </p>
@@ -29,10 +24,12 @@
 	<%= @project.project_description %>
 </p>
 
+<!--
 <p>
-	<b>Special Needs:</b>
+	<b>Accomodations:</b>
 	<%= @project.special_needs%>
 </p>
+-->
 
 <p>
   <% for category in @project.categories %>
@@ -45,12 +42,11 @@
 <p>
 
 <p>
-  <b>Is this project associated with a class?:</b>
+  <b>Associated class:</b>
   <%= @project.class_affiliation %>
 </p>
 
-<p>
-
+<!--
 <h2>Comments</h2>
 <%= render @project.comments %>
 
@@ -60,3 +56,4 @@
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
+-->

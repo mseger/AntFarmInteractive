@@ -23,4 +23,10 @@ class AuthenticationsController < ApplicationController
     end
     render :text => "<script>window.close()</script>"
   end
+
+  def destroy
+    reset_session
+    flash[:notice] = "Logged out."
+    redirect_to root_url
+  end
 end

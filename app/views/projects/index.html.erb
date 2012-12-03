@@ -2,9 +2,16 @@
   document.getElementById('li_projects').className = "active dropdown";
 </script>
 
-<h2 class="titles_down">All Projects</h2>
+<h2>Expo Hallway Presentations</h2>
 
-<table>
+<table style="width: 100%" class="table table-striped table-hover">
+  <colgroup>
+  <col style="width: 50%"></col>
+  <col style="width: 50%"></col>
+  <col style="width: 0"></col>
+  <col style="width: 0"></col>
+</colgroup>
+
   <tr>
     <th>Project Title</th>
     <th>Names</th>
@@ -14,15 +21,18 @@
 
 <% @projects.each do |project| %>
   <tr>
-    <!-- NEED TO SWITCH THIS HREF BACK TO http://localhost:3000/projects/ projects for production -->
-    <td><a href="http://olinexpo.herokuapp.com/projects/<%=project.id%>"> <%= project.presentation_title %> </a> </td>
+    <td><a href="/projects/<%=project.id%>"> <%= project.presentation_title %> </a> </td>
     <td><%= project.presentation_title %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td style="padding-right: 0"><%= link_to edit_project_path(project), :class => 'btn' do %>
+      <i class="icon-edit icon"></i>
+      <% end %></td>
+    <td><%= link_to project, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-danger' do %>
+      <i class="icon-trash icon-white"></i>
+      <% end %></td>
   </tr>
 <% end %>
 </table>
 
-<br />
-
-<%= link_to 'Add Your Project Here!', new_project_path %>
+<div class="jumbotron">
+        <div><a href="<%=new_project_path%>" class="btn btn-large btn-success">Register Your Presentation</a></div>
+      </div>

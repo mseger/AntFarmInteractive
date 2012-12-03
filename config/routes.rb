@@ -18,6 +18,7 @@ AntFarmInteractive::Application.routes.draw do
 
   # FB Auth
   match '/auth/:provider/callback', :to => 'authentications#create'
+  match "/logout", :to => "authentications#destroy"
 
   match '/user', :to => 'application#user'
 

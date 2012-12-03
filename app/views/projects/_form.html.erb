@@ -1,4 +1,4 @@
-<%= form_for(@project, :html=> {:class => "projectform"}) do |f| %>
+<%= form_for(@project, :html=> {:class => "projectform", :'data-persist' => "garlic"}) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
@@ -15,49 +15,90 @@
     <p> This is the sign-up form for hallway presentations for Expo. This should be completed for each individual or group presentation. Please fill it out only ONCE for the group: it should not be filled out by each group member individually. It should also not be filled out for presentations which have already been submitted for a classroom presentation or performance. All of the presentations on this form will be conducted in the hallway. You may do a traditional poster, a demonstration, or any other format. Please indicate any special space requirements in the area indicated below. You must sign up by December 10 at the latest. If you need to make any changes after submitting this form, you must completely fill out the form a second time incorporating the changes, then email Rebecca so the first posting can be removed. </p>
   </div>
 
-  <div class="projectformfield_narrow1">
-    <%= f.label :contact_name%>
-    <%= f.text_field :contact_name %>
-  </div>
 
-  <div class="projectformfield_narrow1">
-    <%= f.label :contact_email %>
-    <%= f.text_field :contact_email %>
+  <script>
+  function authenticateFacebook (next) {
+    var win = window.open('/auth/facebook', '_blank','location=yes, scrollbars=yes, width=640, height=359', true);
+    var timer = setInterval(function() {   
+      if (win.closed) {  
+        clearInterval(timer);
+        next();
+      }  
+    }, 10);  
+  }
+
+  function loginManually () {
+    if (window.$) {
+      $('#login-manually').css({'visibility': '', 'position': ''});
+    }
+  }
+  </script>
+  <% if current_user %>
+    <p class="lead">Presenter</p>
+  <p>Logged in as <b><%= current_user.name %></b>. <a href="/logout">Logout?</a></p>
+  <% else %>
+  <div id="login-by-fb">
+    <p class="lead">Presenter</p>
+    <p class="muted"><button onclick="authenticateFacebook(window.location.reload.bind(window.location)); return false" class="btn btn-info">Log in with Facebook</button></a> to be added as a presenter, or <a onclick="loginManually()" href="#">opt out.</a></p>
   </div>
+  <% end %>
+  <div id="login-manually" style="visibility:hidden; position: absolute">
+    <div class="projectformfield_narrow1">
+      <%= f.label :contact_name, :class => 'lead' %>
+      <%= f.text_field :contact_name, :value => (current_user and current_user.name) %>
+    </div>
+
+    <div class="projectformfield_narrow1">
+      <%= f.label :contact_email, :class => 'lead' %>
+      <%= f.text_field :contact_email, :value => (current_user and current_user.email) %>
+    </div>
+  </div>
+  <% if current_user %>
+  <script>
+  var manual = document.getElementById('login-manually');
+  manual.style.visibility = '';
+  manual.style.position = '';
+  </script>
+  <% end %>
+
+  <br>
+
+  <!--
+-->
 
   <div class="projectformfield_narrow2">     
-    <%= f.label :presentation_title%>
+    <%= f.label :presentation_title, :class => 'lead'%>
     <%= f.text_field :presentation_title %>
   </div>
 
   <div class="projectformfield_wide">
-    <%= f.label :all_students_presenting %>
+    <%= f.label :all_students_presenting, :class => 'lead' %>
     <div class="projectformfield_wide">
-      <p><font color="gray"> Please separate names by commas and include the contact person in this list. Names should be as you would have them appear in the program. </font></p>
+      <p class="muted"> Please separate names by commas and include the contact person in this list. Names should be as you would have them appear in the program.</p>
     </div>
     <%= f.text_area :all_students_presenting %>
   </div>
 
   <div class="projectformfield_wide">
-    <%= f.label :project_description%>
+    <%= f.label :project_description, :class => 'lead'%>
     <div class="projectformfield_wide">
-      <p><font color="gray"> Please write a short (two sentence), high impact description of your presentation: why should people want to see it? </font></p>
+      <p class="muted"> Please write a short (two sentence), high impact description of your presentation: why should people want to see it? </p>
     </div>
     <%= f.text_area :project_description %>
   </div>
   
   <div class="projectformfield_wide">
-    <%= f.label :special_needs%>
+    <%= f.label 'Special Accomodations', :class => 'lead'%>
     <div class="projectformfield_wide">
-      <p><font color="gray"> Please indicate here how much space your presentation will require (if you will have multiple posters, for instance, or a large demo, please estimate the number of linear feet of hallway or number of desks you will need). Also please indicate here any time conflicts. If a group member is in the OCO please make sure 'OCO' occurs in the text of this field. Please also indicate if your presentation will be wet or dirty. </font></p>
+      <p class="muted"> Please indicate here how much space your presentation will require (if you will have multiple posters, for instance, or a large demo, please estimate the number of linear feet of hallway or number of desks you will need). Also please indicate here any time conflicts. If a group member is in the OCO please make sure 'OCO' occurs in the text of this field. Please also indicate if your presentation will be wet or dirty.</p>
     </div>
     <%= f.text_area :special_needs %>
   </div> 
 
   <div class="projectformfield_wide">
-    <%= f.label :topical_area %>
+    <%= f.label :topical_area, :class => 'lead' %>
     <div class="projectformfield_wide">
-      <p><font color="gray"> For the purposes of spatially grouping related presentation, please indicate your preferred topical designation (with whom would you like to be grouped).</font></p>
+      <p class="muted"> For the purposes of spatially grouping related presentation, please indicate your preferred topical designation (with whom would you like to be grouped).</p>
     </div>
     <% for category in Category.find(:all) %>
         <div>
@@ -70,13 +111,15 @@
   </br>
 
   <div class="class_affiliation">
-    <%= f.label :is_this_presentation_affiliated_with_a_class? %>
+    <%= f.label :is_this_presentation_affiliated_with_a_class?, :class => 'lead' %>
     <div class="projectformfield_wide">
       <p><font color="gray"> Please give class name, not class number.</font></p>
     </div>
     <%= f.text_field :class_affiliation %>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions" style="margin: 30px 0; text-align: center; ">
+    <%= f.submit 'Submit your Presentation', :class => 'btn btn-success btn-large' %>
+    <%= link_to 'Cancel', projects_path, :class => 'btn btn-large' %>
+  </div>
 <% end %>

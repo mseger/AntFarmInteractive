@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.ico" />
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -50,6 +51,8 @@
       .marketing p + h4 {
         margin-top: 28px;
       }
+
+      .marketing h4 { text-align: center; }
     </style>
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -84,42 +87,39 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="/">Home</a></li>
-          <li><a href="<%=projects_path%>">Projects</a></li>
-          <li><a href="#">Add Project</a></li>
-          <li><a href="<%=pages_contact_path%>">Feedback</a></li>
+          <li><a href="<%=projects_path%>">Presentations</a></li>
+          <li><a href="<%=new_project_path%>">Submit Presentation</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Expo</a></li>
-              <li class="divider"></li>
-              <li><a href="<%=pages_about_path%>">Lifegraph Labs</a></li>
+              <li><a href="<%=pages_contact_path%>">Give Feedback!</a></li>
+              <li><a href="http://www.olin.edu/">Olin College</a></li>
+              <!--<li class="divider"></li>-->
+              <li><a href="http://lifegraphteam.com/">Lifegraph Labs</a></li>
             </ul>
           </li>
         </ul>
         <!--<h3 class="muted">Olin Expo Fall 2012</h3>-->
         <h1 id="brand">
-          <a href="/"><img src="/assets/expolive-logo.png" alt="" width="250"></a>
+          <a href="/"><img src="/assets/expolive-logo.png" alt="" width="260"></a>
         </h1>
       </div>
 
-      <% if current_user %>
-      <p>Logged in as <%= current_user.name %>.</p>
-      <% else %>
-      <p>You are not logged in. <button onclick="authenticateFacebook(window.location.reload.bind(window.location)); return false">Log in?</button></p>
-      <% end %>
+      <hr>
 
       <% if flash[:notice] %>
-        <p class="notice"><%= flash[:notice] %></p>
+        <div class="alert"><%= flash[:notice] %></div>
       <% end %>
       <% if flash[:error] %>
-        <p class="error"><%= flash[:error] %></p>
+        <div class="alert alert-error"><%= flash[:error] %></div>
       <% end %>
 
 		<%= yield %>
+
       <hr>
 
       <div class="footer">
-        <p>&copy; Lifegraph Labs 2012</p>
+        <p>Developed in partnership between <a href="http://olin.edu/">Olin College</a> and <a href="http://lifegraphlabs.com/">Lifegraph Labs</a>. Expo Live! &copy; 2012</p>
       </div>
 
     </div> <!-- /container -->
@@ -140,5 +140,6 @@
     <script src="/js/bootstrap-collapse.js"></script>
     <script src="/js/bootstrap-carousel.js"></script>
     <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="http://garlicjs.org/garlic.js"></script>
 </body>
 </html>
