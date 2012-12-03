@@ -15,6 +15,8 @@ AntFarmInteractive::Application.routes.draw do
   # FB Auth
   match '/auth/:provider/callback', :to => 'authentications#create'
 
+  match '/user', :to => 'application#user'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
