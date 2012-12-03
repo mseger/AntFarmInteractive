@@ -11,8 +11,9 @@
     </div>
   <% end %>
 
-  <div class="projectformfield_wide">
-    <p> This is the sign-up form for hallway presentations for Expo. This should be completed for each individual or group presentation. Please fill it out only ONCE for the group: it should not be filled out by each group member individually. It should also not be filled out for presentations which have already been submitted for a classroom presentation or performance. All of the presentations on this form will be conducted in the hallway. You may do a traditional poster, a demonstration, or any other format. Please indicate any special space requirements in the area indicated below. You must sign up by December 10 at the latest. If you need to make any changes after submitting this form, you must completely fill out the form a second time incorporating the changes, then email Rebecca so the first posting can be removed. </p>
+  <div class="projectformfield_wide well">
+    <p>This is the sign-up form for hallway presentations for Expo. This should be completed for each individual or group presentation. Please fill it out only ONCE for the group: it should not be filled out by each group member individually. It should also not be filled out for presentations which have already been submitted for a classroom presentation or performance. All of the presentations on this form will be conducted in the hallway. You may do a traditional poster, a demonstration, or any other format. Please indicate any special space requirements in the area indicated below.</p>
+    <p><b>You must sign up by December 10 at the latest</b>. If you need to make any changes after submitting this form, you can edit the presentation by finding its listing in the presentation listing. </p>
   </div>
 
 
@@ -34,22 +35,22 @@
   }
   </script>
   <% if current_user %>
-    <p class="lead">Presenter</p>
+    <p class="lead">Presenter / Main Contact</p>
   <p>Logged in as <b><%= current_user.name %></b>. <a href="/logout">Logout?</a></p>
   <% else %>
   <div id="login-by-fb">
-    <p class="lead">Presenter</p>
+    <p class="lead">Presenter / Main Contact</p>
     <p class="muted"><button onclick="authenticateFacebook(function () { window.location.reload(); }); return false" class="btn btn-info">Log in with Facebook</button></a> to be added as a presenter, or <a onclick="loginManually()" href="#">opt out.</a></p>
   </div>
   <% end %>
   <div id="login-manually" style="visibility:hidden; position: absolute">
     <div class="projectformfield_narrow1">
-      <%= f.label :contact_name, :class => 'lead' %>
+      <%= f.label :contact_name do %><b>Contact Name</b><% end %>
       <%= f.text_field :contact_name, :value => (current_user and current_user.name) %>
     </div>
 
     <div class="projectformfield_narrow1">
-      <%= f.label :contact_email, :class => 'lead' %>
+      <%= f.label :contact_email do %><b>Contact Email</b><% end %>
       <%= f.text_field :contact_email, :value => (current_user and current_user.email) %>
     </div>
   </div>
