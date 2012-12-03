@@ -39,7 +39,7 @@
   <% else %>
   <div id="login-by-fb">
     <p class="lead">Presenter</p>
-    <p class="muted"><button onclick="authenticateFacebook(window.location.reload.bind(window.location)); return false" class="btn btn-info">Log in with Facebook</button></a> to be added as a presenter, or <a onclick="loginManually()" href="#">opt out.</a></p>
+    <p class="muted"><button onclick="authenticateFacebook(function () { window.location.reload(); }); return false" class="btn btn-info">Log in with Facebook</button></a> to be added as a presenter, or <a onclick="loginManually()" href="#">opt out.</a></p>
   </div>
   <% end %>
   <div id="login-manually" style="visibility:hidden; position: absolute">
