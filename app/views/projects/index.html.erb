@@ -13,8 +13,8 @@
 </colgroup>
 
   <tr>
-    <th>Project Title</th>
-    <th>Names</th>
+    <th>Presentation Title</th>
+    <th>Presenters</th>
     <th></th>
     <th></th>
   </tr>
@@ -23,12 +23,15 @@
   <tr>
     <td><a href="/projects/<%=project.id%>"> <%= project.presentation_title %> </a> </td>
     <td><%= project.presentation_title %></td>
-    <td style="padding-right: 0"><%= link_to edit_project_path(project), :class => 'btn' do %>
+    <td style="padding-right: 0"><%=link_to edit_project_path(project) do %>
       <i class="icon-edit icon"></i>
       <% end %></td>
-    <td><%= link_to project, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-danger' do %>
-      <i class="icon-trash icon-white"></i>
-      <% end %></td>
+    <td><%=link_to edit_project_path(project) do %><b>Edit</b><% end %>
+      <!--
+      <%= link_to project, :method => :delete, :data => { :confirm => 'Are you sure you are the owner of this presentation and want to delete it?' } do %>
+      <i class="icon-trash"></i>
+      <% end %>
+    --></td>
   </tr>
 <% end %>
 </table>

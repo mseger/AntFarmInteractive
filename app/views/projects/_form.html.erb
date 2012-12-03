@@ -1,3 +1,7 @@
+<style>
+.formheader { margin-top: 10px; display: block; font-size: 18px; }
+</style>
+
 <%= form_for(@project, :html=> {:class => "projectform", :'data-persist' => "garlic"}) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
@@ -40,7 +44,7 @@
   <% else %>
   <div id="login-by-fb">
     <p class="lead">Presenter / Main Contact</p>
-    <p class="muted"><button onclick="authenticateFacebook(function () { window.location.reload(); }); return false" class="btn btn-info">Log in with Facebook</button></a> to be added as a presenter, or <a onclick="loginManually()" href="#">opt out.</a></p>
+    <p class="muted"><a onclick="authenticateFacebook(function () { window.location.reload(); }); return false" class="facebook_button"><span class="icon"><img src="/assets/facebookf.png" width="25"></span> <span class="textNode">Log in with Facebook</span></a> to be added as a presenter, or <a onclick="loginManually()" href="#">opt out.</a></p>
   </div>
   <% end %>
   <div id="login-manually" style="visibility:hidden; position: absolute">
@@ -68,36 +72,38 @@
 -->
 
   <div class="projectformfield_narrow2">     
-    <%= f.label :presentation_title, :class => 'lead'%>
+    <%= f.label :presentation_title, :class => 'formheader'%>
     <%= f.text_field :presentation_title %>
   </div>
 
   <div class="projectformfield_wide">
-    <%= f.label :all_students_presenting, :class => 'lead' %>
+    <%= f.label :all_students_presenting, :class => 'formheader' do %>All Presenters<% end %>
     <div class="projectformfield_wide">
       <p class="muted"> Please separate names by commas and include the contact person in this list. Names should be as you would have them appear in the program.</p>
     </div>
-    <%= f.text_area :all_students_presenting %>
+    <%= f.text_area :all_students_presenting, :rows => 8 %>
   </div>
 
+  <hr>
+
   <div class="projectformfield_wide">
-    <%= f.label :project_description, :class => 'lead'%>
+    <%= f.label :project_description, :class => 'formheader'%>
     <div class="projectformfield_wide">
       <p class="muted"> Please write a short (two sentence), high impact description of your presentation: why should people want to see it? </p>
     </div>
-    <%= f.text_area :project_description %>
+    <%= f.text_area :project_description, :rows => 5 %>
   </div>
   
   <div class="projectformfield_wide">
-    <%= f.label 'Special Accomodations', :class => 'lead'%>
+    <%= f.label :special_needs, :class => 'formheader' do %>Special Accomodations<% end %>
     <div class="projectformfield_wide">
       <p class="muted"> Please indicate here how much space your presentation will require (if you will have multiple posters, for instance, or a large demo, please estimate the number of linear feet of hallway or number of desks you will need). Also please indicate here any time conflicts. If a group member is in the OCO please make sure 'OCO' occurs in the text of this field. Please also indicate if your presentation will be wet or dirty.</p>
     </div>
-    <%= f.text_area :special_needs %>
+    <%= f.text_area :special_needs, :rows => 5 %>
   </div> 
 
   <div class="projectformfield_wide">
-    <%= f.label :topical_area, :class => 'lead' %>
+    <%= f.label :topical_area, :class => 'formheader' %>
     <div class="projectformfield_wide">
       <p class="muted"> For the purposes of spatially grouping related presentation, please indicate your preferred topical designation (with whom would you like to be grouped).</p>
     </div>
@@ -112,7 +118,7 @@
   </br>
 
   <div class="class_affiliation">
-    <%= f.label :is_this_presentation_affiliated_with_a_class?, :class => 'lead' %>
+    <%= f.label :is_this_presentation_affiliated_with_a_class?, :class => 'formheader' %>
     <div class="projectformfield_wide">
       <p><font color="gray"> Please give class name, not class number.</font></p>
     </div>
