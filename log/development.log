@@ -62325,3 +62325,411 @@ Completed 200 OK in 201ms (Views: 180.0ms | ActiveRecord: 19.0ms)
 
 Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:17:20 -0500
 Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-02 22:27:33 -0500
+Processing by PagesController#preview as HTML
+  Rendered pages/preview.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:27:34 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/olin_expo_visualization.png" for 127.0.0.1 at 2012-12-02 22:27:34 -0500
+Served asset /olin_expo_visualization.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/olin_expo_transition.png" for 127.0.0.1 at 2012-12-02 22:27:34 -0500
+Served asset /olin_expo_transition.png - 304 Not Modified (24ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:27:35 -0500
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:27:36 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-12-02 22:27:37 -0500
+Processing by ProjectsController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 1 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 3 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 5 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 7 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 8 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 9 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 10 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 11 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 12 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 13 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 14 LIMIT 1[0m
+  Rendered projects/_form.html.erb (12.9ms)
+  Rendered projects/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:27:37 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2012-12-02 22:27:44 -0500
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r3VtiUTkRq8FAHXiW91lvdk8fhVSTGF8uiG7Unr1ATk=", "project"=>{"contact_name"=>"", "contact_email"=>"", "presentation_title"=>"", "all_students_presenting"=>"", "project_description"=>"", "special_needs"=>"", "category_ids"=>["5"], "class_affiliation"=>""}, "commit"=>"Create Project"}
+  [1m[35mCategory Load (19.7ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (56.0ms)[0m  INSERT INTO "projects" ("all_students_presenting", "class_affiliation", "contact_email", "contact_name", "created_at", "presentation_title", "project_description", "special_needs", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["all_students_presenting", ""], ["class_affiliation", ""], ["contact_email", ""], ["contact_name", ""], ["created_at", Mon, 03 Dec 2012 03:27:44 UTC +00:00], ["presentation_title", ""], ["project_description", ""], ["special_needs", ""], ["updated_at", Mon, 03 Dec 2012 03:27:44 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "categories_projects" ("project_id", "category_id") VALUES (5, 5)[0m
+  [1m[35m (353.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/projects/5
+Completed 302 Found in 435ms (ActiveRecord: 429.7ms)
+
+
+Started GET "/projects/5" for 127.0.0.1 at 2012-12-02 22:27:44 -0500
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" = 5
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = 5[0m
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (20.7ms)
+  Rendered projects/show.html.erb within layouts/application (57.5ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:27:45 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:27:48 -0500
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:27:48 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-12-02 22:30:21 -0500
+Processing by ProjectsController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 1 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 3 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 5 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 7 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 8 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 9 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 10 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 11 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 12 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 13 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 14 LIMIT 1[0m
+  Rendered projects/_form.html.erb (14.9ms)
+  Rendered projects/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:30:21 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2012-12-02 22:30:48 -0500
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r3VtiUTkRq8FAHXiW91lvdk8fhVSTGF8uiG7Unr1ATk=", "project"=>{"contact_name"=>"sldkfj", "contact_email"=>"sdlkfj", "presentation_title"=>"sldkfj", "all_students_presenting"=>"asldkfjalsdkfjalsdkjfalsdkfjasd", "project_description"=>"alskdjflaksdjflaksdjf", "special_needs"=>"alsdkjflasdkfjlasdkjf", "category_ids"=>["2", "7"], "class_affiliation"=>"lSdkjf"}, "commit"=>"Create Project"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" IN (2, 7)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("all_students_presenting", "class_affiliation", "contact_email", "contact_name", "created_at", "presentation_title", "project_description", "special_needs", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["all_students_presenting", "asldkfjalsdkfjalsdkjfalsdkfjasd"], ["class_affiliation", "lSdkjf"], ["contact_email", "sdlkfj"], ["contact_name", "sldkfj"], ["created_at", Mon, 03 Dec 2012 03:30:48 UTC +00:00], ["presentation_title", "sldkfj"], ["project_description", "alskdjflaksdjflaksdjf"], ["special_needs", "alsdkjflasdkfjlasdkjf"], ["updated_at", Mon, 03 Dec 2012 03:30:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "categories_projects" ("project_id", "category_id") VALUES (6, 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "categories_projects" ("project_id", "category_id") VALUES (6, 7)
+  [1m[36m (301.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects/6
+Completed 302 Found in 305ms (ActiveRecord: 301.6ms)
+
+
+Started GET "/projects/6" for 127.0.0.1 at 2012-12-02 22:30:48 -0500
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" = 6[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."project_id" = 6
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (2.1ms)
+  Rendered projects/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:30:48 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:30:54 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:30:54 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:32:17 -0500
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:32:17 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:34:19 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:34:19 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:36:55 -0500
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:36:55 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:37:04 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:37:04 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/3" for 127.0.0.1 at 2012-12-02 22:37:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/3"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:37:15 -0500
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:37:15 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:37:41 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:37:41 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:37:50 -0500
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:37:50 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/1" for 127.0.0.1 at 2012-12-02 22:37:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/1"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:38:07 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:38:07 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-12-02 22:38:08 -0500
+Processing by ProjectsController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" 
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 2 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 3 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 4 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 6 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 7 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 8 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 9 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 10 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 11 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 12 LIMIT 1
+  [1m[36mCategory Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 13 LIMIT 1[0m
+  [1m[35mCategory Exists (0.1ms)[0m  SELECT 1 AS one FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" IS NULL AND "categories"."id" = 14 LIMIT 1
+  Rendered projects/_form.html.erb (12.4ms)
+  Rendered projects/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:38:09 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2012-12-02 22:38:24 -0500
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r3VtiUTkRq8FAHXiW91lvdk8fhVSTGF8uiG7Unr1ATk=", "project"=>{"contact_name"=>"MAAAAA", "contact_email"=>"alsdkjf", "presentation_title"=>"asdlkfjasdlkfjsdkjfb", "all_students_presenting"=>"asdf", "project_description"=>"", "special_needs"=>"", "category_ids"=>["2"], "class_affiliation"=>""}, "commit"=>"Create Project"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("all_students_presenting", "class_affiliation", "contact_email", "contact_name", "created_at", "presentation_title", "project_description", "special_needs", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["all_students_presenting", "asdf"], ["class_affiliation", ""], ["contact_email", "alsdkjf"], ["contact_name", "MAAAAA"], ["created_at", Mon, 03 Dec 2012 03:38:24 UTC +00:00], ["presentation_title", "asdlkfjasdlkfjsdkjfb"], ["project_description", ""], ["special_needs", ""], ["updated_at", Mon, 03 Dec 2012 03:38:24 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  INSERT INTO "categories_projects" ("project_id", "category_id") VALUES (7, 2)
+  [1m[36m (315.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects/7
+Completed 302 Found in 320ms (ActiveRecord: 316.5ms)
+
+
+Started GET "/projects/7" for 127.0.0.1 at 2012-12-02 22:38:24 -0500
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" = 7[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."project_id" = 7
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (2.2ms)
+  Rendered projects/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:38:24 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects/7" for 127.0.0.1 at 2012-12-02 22:38:52 -0500
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" = 7
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = 7[0m
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (1.6ms)
+  Rendered projects/show.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:38:52 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:38:54 -0500
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:38:54 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-12-02 22:39:07 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:39:07 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2012-12-02 22:39:09 -0500
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_projects" ON "categories"."id" = "categories_projects"."category_id" WHERE "categories_projects"."project_id" = 2[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."project_id" = 2
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered projects/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/collabLogo.png" for 127.0.0.1 at 2012-12-02 22:39:09 -0500
+Served asset /collabLogo.png - 304 Not Modified (0ms)
