@@ -35,9 +35,21 @@
 </p>
 
 <p>
-	<b>Topical Areas:</b>
-	<%= @project.topical_area %>
+  <% for category in @project.categories %>
+      <div>
+        <%= category.name %>
+      </div>
+  <% end %>
 </p>
+
+<p>
+
+<p>
+  <b>Is this project associated with a class?:</b>
+  <%= @project.class_affiliation %>
+</p>
+
+<p>
 
 <h2>Comments</h2>
 <%= render @project.comments %>

@@ -7,7 +7,7 @@ class CreateProjects < ActiveRecord::Migration
       t.text :all_students_presenting
       t.text :project_description
       t.text :special_needs
-#      t.check_box_tag :topical_area
+      t.check_box_tag :topical_area
       t.string :class_affiliation
 
       t.timestamps

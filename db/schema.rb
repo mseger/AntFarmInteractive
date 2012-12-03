@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121201211724) do
+ActiveRecord::Schema.define(:version => 20121202233320) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -20,6 +20,20 @@ ActiveRecord::Schema.define(:version => 20121201211724) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "categories_projects", :id => false, :force => true do |t|
+    t.integer "category_id"
+    t.integer "project_id"
+  end
+
+  add_index "categories_projects", ["category_id", "project_id"], :name => "index_categories_projects_on_category_id_and_project_id"
+  add_index "categories_projects", ["project_id", "category_id"], :name => "index_categories_projects_on_project_id_and_category_id"
 
   create_table "comments", :force => true do |t|
     t.string   "commenter"
@@ -38,15 +52,9 @@ ActiveRecord::Schema.define(:version => 20121201211724) do
     t.text     "all_students_presenting"
     t.text     "project_description"
     t.text     "special_needs"
-    t.text     "topical_area"
+    t.string   "class_affiliation"
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
-    t.string   "title"
-    t.string   "names"
-    t.string   "image_url"
-    t.text     "content"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|

@@ -1,0 +1,55 @@
+<%= form_for(@project, :html=> {:class => "projectform"}) do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="projectformfield_narrow1">
+    <%= f.label :contact_name %><br />
+    <%= f.text_field :contact_name %>
+  </div>
+  <div class="projectformfield_narrow1">
+    <%= f.label :contact_email %><br />
+    <%= f.text_field :contact_email %>
+  </div>
+  <div class="projectformfield_narrow2">     
+    <%= f.label :presentation_title%><br />
+    <%= f.text_field :presentation_title %>
+  </div>
+  <div class="projectformfield_wide">
+    <%= f.label :all_students_presenting %><br />
+    <%= f.text_area :all_students_presenting %>
+  </div>
+  <div class="projectformfield_wide">
+    <%= f.label :project_description%><br />
+    <%= f.text_area :project_description %>
+  </div>
+  
+  <div class="projectformfield_wide">
+    <%= f.label :special_needs%><br />
+    <%= f.text_area :special_needs %>
+  </div> 
+
+<% for category in Category.find(:all) %>
+    <div>
+      <%= check_box_tag "project[category_ids][]", category.id, @product.categories.include?(category) %>
+      <%= category.name %>
+    </div>
+<% end %>
+
+
+  <div class="class_affiliation">
+    <%= f.label :class_affiliation %><br />
+    <%= f.text_field :class_affiliation %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+<% end %>
