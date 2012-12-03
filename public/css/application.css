@@ -36,3 +36,9 @@
     position: relative;
     top: -1px;
 }
+
+.titles_down {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
