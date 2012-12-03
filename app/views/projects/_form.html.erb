@@ -44,10 +44,10 @@
   <% else %>
   <div id="login-by-fb">
     <p class="lead">Presenter / Main Contact</p>
-    <p class="muted"><a onclick="authenticateFacebook(function () { window.location.reload(); }); return false" class="facebook_button"><span class="icon"><img src="/assets/facebookf.png" width="25"></span> <span class="textNode">Log in with Facebook</span></a> to be added as a presenter, or <a onclick="loginManually()" href="#">opt out.</a></p>
+    <p class="muted"><a onclick="authenticateFacebook(function () { window.location.reload(); }); return false" class="facebook_button"><span class="icon"><img src="/assets/facebookf.png" width="25"></span> <span class="textNode">Log in with Facebook</span></a> Login to be added as a presenter, or <a onclick="loginManually()" href="#" style="text-decoration: underline">type in your information.</a></p>
   </div>
   <% end %>
-  <div id="login-manually" style="visibility:hidden; position: absolute">
+  <div id="login-manually" style="visibility:hidden; position: absolute" class="well">
     <div class="projectformfield_narrow1">
       <%= f.label :contact_name do %><b>Contact Name</b><% end %>
       <%= f.text_field :contact_name, :value => (current_user and current_user.name) %>
