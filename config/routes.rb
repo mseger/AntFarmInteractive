@@ -1,12 +1,6 @@
 AntFarmInteractive::Application.routes.draw do
 
-  get "sessions/new"
-
-  get "sessions/create"
-
-  get "sessions/failure"
-
-  get "pages/preview"
+  devise_for :users
 
   get "pages/home"
 
@@ -19,10 +13,7 @@ AntFarmInteractive::Application.routes.draw do
   end
 
   # FB Auth
-  get '/login', :to => 'sessions#new', :as => :login
-  get '/logout', :to => 'sessions#destroy'
-  match '/auth/:provider/callback', :to => 'sessions#create'
-  match '/auth/failure', :to => 'sessions#failure'
+  match '/auth/:provider/callback', :to => 'authentications#create'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

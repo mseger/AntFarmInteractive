@@ -65,6 +65,11 @@
 <body>
     <div class="container-narrow">
 
+      <% if current_user %>
+      <h1>Welcome <%= current_user.email %></h1>
+      <% else %>
+      <% end %>
+
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="/">Home</a></li>
@@ -85,6 +90,14 @@
           <a href="/"><img src="/assets/collabLogo.png" alt=""></a>
         </h3>
       </div>
+
+      <% if flash[:notice] %>
+        <p class="notice"><%= flash[:notice] %></p>
+      <% end %>
+      <% if flash[:error] %>
+        <p class="error"><%= flash[:error] %></p>
+      <% end %>
+
 		<%= yield %>
       <hr>
 
