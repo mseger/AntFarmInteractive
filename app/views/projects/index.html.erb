@@ -2,7 +2,7 @@
   document.getElementById('li_projects').className = "active dropdown";
 </script>
 
-<h1>List of Projects</h1>
+<h2 class="titles_down">All Projects</h2>
 
 <table>
   <tr>
@@ -14,9 +14,9 @@
 
 <% @projects.each do |project| %>
   <tr>
-
-    <td><a href="http://olinexpo.herokuapp.com/projects/<%=project.id%>"> <%= project.title %> </a> </td>
-    <td><%= project.names %></td>
+    <!-- NEED TO SWITCH THIS HREF BACK TO http://localhost:3000/projects/ projects for production -->
+    <td><a href="http://olinexpo.herokuapp.com/projects/<%=project.id%>"> <%= project.presentation_title %> </a> </td>
+    <td><%= project.presentation_title %></td>
     <td><%= link_to 'Edit', edit_project_path(project) %></td>
     <td><%= link_to 'Destroy', project, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
   </tr>

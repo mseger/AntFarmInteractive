@@ -1,6 +1,18 @@
 AntFarmInteractive::Application.routes.draw do
 
+<<<<<<< HEAD
   devise_for :users
+=======
+  resources :categories
+
+  get "sessions/new"
+
+  get "sessions/create"
+
+  get "sessions/failure"
+
+  get "pages/preview"
+>>>>>>> 17f9c7bec9a8ee87b2eeff5c0b675d5bd84a306d
 
   get "pages/home"
 
