@@ -22,11 +22,21 @@
 <% @projects.each do |project| %>
   <tr>
     <td><a href="/projects/<%=project.id%>"> <%= project.presentation_title %> </a> </td>
-    <td><%= project.presentation_title %></td>
-    <td style="padding-right: 0"><%=link_to edit_project_path(project) do %>
-      <i class="icon-edit icon"></i>
+    <td><%= project.all_students_presenting %></td>
+    
+    <% if current_user %>
+      <td style="padding-right: 0"><%=link_to edit_project_path(project) do %>
+        <i class="icon-edit icon"></i>
       <% end %></td>
-    <td><%=link_to edit_project_path(project) do %><b>Edit</b><% end %>
+
+      <td><%=link_to edit_project_path(project) do %>
+        <b>Edit</b>
+      <% end %>
+    <% else %>
+      <td></td><td></td>
+    <% end %>
+
+
       <!--
       <%= link_to project, :method => :delete, :data => { :confirm => 'Are you sure you are the owner of this presentation and want to delete it?' } do %>
       <i class="icon-trash"></i>
