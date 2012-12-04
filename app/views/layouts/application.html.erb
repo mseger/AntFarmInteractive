@@ -110,10 +110,10 @@ a.facebook_button:hover,a.facebook_button:active,a.facebook_button.active,a.face
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="<%=projects_path%>">Presentations</a></li>
-          <li><a href="<%=new_project_path%>">Submit Presentation</a></li>
-          <li class="dropdown">
+          <li id='li_home'><a href="/">Home</a></li>
+          <li id='li_presentations'><a href="<%=projects_path%>">Presentations</a></li>
+          <li id='li_submit_presentation'><a href="<%=new_project_path%>">Submit Presentation</a></li>
+          <li id='li_about' class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="<%=pages_contact_path%>">Give Feedback!</a></li>
