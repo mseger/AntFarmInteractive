@@ -7,7 +7,6 @@ class Project < ActiveRecord::Base
   validates_presence_of :contact_name, :message => "cannot be blank" 
   validates_presence_of :contact_email, :message => "cannot be blank" 
   validates_presence_of :presentation_title, :message => "cannot be blank" 
-
  
 
 end

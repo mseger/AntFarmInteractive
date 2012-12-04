@@ -1,5 +1,8 @@
 AntFarmInteractive::Application.routes.draw do
 
+  match '/join' => 'projects#join', :as => 'join'
+
+
   devise_for :users
 
   resources :categories

@@ -22,17 +22,44 @@
 <% @projects.each do |project| %>
   <tr>
     <td><a href="/projects/<%=project.id%>"> <%= project.presentation_title %> </a> </td>
-    <td><%= project.all_students_presenting %></td>
+    <td><b>Contact: <%= project.contact_name %></b>, <%= project.all_students_presenting %></td>
     
     <% if current_user %>
-      <td style="padding-right: 0"><%=link_to edit_project_path(project) do %>
-        <i class="icon-edit icon"></i>
-      <% end %></td>
+      <!-- If you are logged in -->
 
-      <td><%=link_to edit_project_path(project) do %>
-        <b>Edit</b>
+      <% if current_user.name == project.contact_name %> 
+        <!-- If you are logged in and the creator -->
+
+        <!-- You can edit -->
+        <td style="padding-right: 0"><%=link_to edit_project_path(project) do %>
+          <i class="icon-edit icon"></i>
+        <% end %></td>
+        <td><%=link_to edit_project_path(project) do %>
+          <b>Edit</b>
+        <% end %>
+
+        <!-- You can't join -->
+      <% else %>
+
+      <!-- If you are logged in and not the creator and not in the group-->
+        <!-- You can't edit -->
+        <!-- You can join -->
+
+        <% if !project.all_students_presenting.include? current_user.name %>
+          <td style="padding-right: 0"><i class="icon-plus icon"></td>
+          <% new_list = project.all_students_presenting + ", " + current_user.name %>
+          <td><b><%=link_to "Join", :controller => "projects", :action => "join",
+                                 :project => { :all_students_presenting => new_list},
+                                 :id => project.id %></b></td>
+        <% else %>
+          <td></td><td></td>
+        <% end %>
       <% end %>
+
+
     <% else %>
+      <!-- You are not logged in -->
+      <!-- You cannot edit or join -->
       <td></td><td></td>
     <% end %>
 

@@ -80,4 +80,19 @@ class ProjectsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def join
+    @project = Project.find(params[:id])
+
+    respond_to do |format|
+      if @project.update_attributes(params[:project])
+        format.html { redirect_to @project, :notice => 'Project was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render :action => "edit" }
+        format.json { render :json => @project.errors, :status => :unprocessable_entity }
+      end
+    end    
+  end
+
 end
