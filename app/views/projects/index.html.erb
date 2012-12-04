@@ -50,6 +50,7 @@
           <% new_list = project.all_students_presenting + ", " + current_user.name %>
           <td><b><%=link_to "Join", :controller => "projects", :action => "join",
                                  :project => { :all_students_presenting => new_list},
+                                 :confirm => "Are you sure you want to join this project?",
                                  :id => project.id %></b></td>
         <% else %>
           <td></td><td></td>
